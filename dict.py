@@ -1,4 +1,6 @@
-dict = [
+import random
+
+dicts = [
     {
         'name': 'Malware',
         'wordclass': 'Noun',
@@ -299,3 +301,24 @@ dict = [
 
 
 ]
+
+
+score = 0
+
+
+for i in range(10):
+    ran_num = random.randint(0,100)
+    question =  dicts[ran)] ['Definition']
+    answer = 
+    print(question)
+    Ans = input("> ")
+
+    if Ans == :
+        print('You\'re correct')
+        score += 1
+        run = True
+        print(score)
+    else:
+        print("incorrect")
+        print("the answer is " + dicts[ran] ['name'])
+        print(score)
