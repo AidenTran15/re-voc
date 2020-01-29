@@ -305,7 +305,6 @@ dicts = [
 
 score = 0
 
-
 for i in range(10):
     ran_num = random.randint(0,100)
     question =  dicts[ran)] ['Definition']
