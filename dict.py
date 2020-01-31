@@ -305,19 +305,21 @@ dicts = [
 
 score = 0
 
-for i in range(10):
-    ran_num = random.randint(0,100)
-    question =  dicts[ran)] ['Definition']
-    answer = 
-    print(question)
-    Ans = input("> ")
+    
 
-    if Ans == :
+for i in range(0,10):
+    ran_num = random.randint(0,20)
+    question = dicts[ran_num] ['Definition']
+    print("The question is: " + question)
+    Ans = input("> ")
+    correct_ans = dicts[ran_num] ['name']
+
+    if Ans == correct_ans:
         print('You\'re correct')
         score += 1
         run = True
-        print(score)
+        print("your score is " + str(score))
     else:
         print("incorrect")
-        print("the answer is " + dicts[ran] ['name'])
-        print(score)
+        print("the answer is " + dicts[ran_num] ['name'])
+        print("your score is " + str(score))
